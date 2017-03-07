@@ -1,7 +1,6 @@
 # changelog compare with original create-react-app
 ## useage
-+ npm install
-+ npm start
+npm install && npm start
 ----
 ###support SCSS
 ###support decorator
