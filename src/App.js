@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+export default @testDecorator class App extends Component {
   timeout () {
     return new Promise((resolve) => setTimeout(resolve, 2000));
   }
@@ -12,8 +12,8 @@ class App extends Component {
       a: '123',
       b: '456'
     };
-    console.log('mounted.');
-    console.log({...test});
+    console.log('support async await.');
+    console.log({...test}, 'support ...');
   }
   render() {
     return (
@@ -30,4 +30,7 @@ class App extends Component {
   }
 }
 
-export default App;
+function testDecorator(target) {
+  target.isfunny = true;
+}
+
