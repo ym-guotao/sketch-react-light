@@ -2,7 +2,7 @@
 ## useage
 + npm install
 + npm start
-<br>
+<hr>
 ### support SCSS
 ### support decorator
 ### add react-router
