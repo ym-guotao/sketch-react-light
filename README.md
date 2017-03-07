@@ -2,9 +2,9 @@
 ## useage
 + npm install
 + npm start
-<hr>
-### support SCSS
-### support decorator
+----
+###support SCSS
+###support decorator
 ### add react-router
 
 # original description from create-react-app
