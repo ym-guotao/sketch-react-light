@@ -1,7 +1,11 @@
 # changelog compare with original create-react-app
-
+## useage
++ npm install
++ npm start
+<br>
 ### support SCSS
 ### support decorator
+### add react-router
 
 # original description from create-react-app
 
