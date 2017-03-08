@@ -6,10 +6,10 @@
 
 ## Table of Contents
 
--support SCSS
--support decorator
--add react-router
--support Less
+- support SCSS
+- support decorator
+- add react-router
+- support Less
 
 # original description from create-react-app
 
