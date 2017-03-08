@@ -18,13 +18,7 @@
     "css-loader": "0.26.1",
     "detect-port": "1.0.1",
     "dotenv": "2.0.0",
-    "eslint": "3.16.1",
-    "eslint-config-react-app": "^0.6.1",
-    "eslint-loader": "1.6.0",
-    "eslint-plugin-flowtype": "2.21.0",
-    "eslint-plugin-import": "2.0.1",
-    "eslint-plugin-jsx-a11y": "4.0.0",
-    "eslint-plugin-react": "6.4.1",
+    "eslint-config-36node": "^0.2.1",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.10.0",
     "fs-extra": "0.30.0",
@@ -90,6 +84,6 @@
     ]
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "36node"
   }
 }

@@ -2,7 +2,7 @@
 
 ## useage
 
--npm install && npm start
+npm install && npm start
 
 ## Table of Contents
 
