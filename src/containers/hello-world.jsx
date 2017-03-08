@@ -4,11 +4,18 @@ import logo from '../logo.svg';
 import './hello-world.scss';
 
 function testDecorator(target) {
-    console.log(target);
-  target.isfunny = true;
+  target.isfunny = 'Hi, I am very funny.';
+  target.tryFunny = function(){return '12345';}
+  return target;
 }
-@testDecorator
+
+@testDecorator 
 export default class HelloWorld extends Component {
+  constructor (props) {
+    super();
+
+    this.tryFunny = this.__proto__.constructor.tryFunny.bind(this);
+  }
   timeout () {
     return new Promise((resolve) => setTimeout(resolve, 2000));
   }
@@ -18,10 +25,11 @@ export default class HelloWorld extends Component {
       a: '123',
       b: '456'
     };
+    console.log('support sass');
     console.log('support async await.');
     console.log({...test}, 'support ...');
-    console.log(this);
-    console.log(this.isfunny, 'support decorator');
+    // console.log(this.__proto__.constructor.isfunny);
+    // console.log(HelloWorld.tryFunny());
   }
   render() {
     return (
@@ -37,3 +45,4 @@ export default class HelloWorld extends Component {
     );
   }
 }
+

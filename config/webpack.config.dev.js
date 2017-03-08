@@ -114,7 +114,8 @@ module.exports = {
           /\.css$/,
           /\.json$/,
           /\.svg$/,
-          /\.scss$/
+          /\.scss$/,
+          /\.less$/
         ],
         loader: 'url',
         query: {
@@ -161,10 +162,15 @@ module.exports = {
       // ** STOP ** Are you adding a new loader?
       // Remember to add the new extension(s) to the "url" loader exclusion list.
 
-      // enable scss with 'sass' loader and use 'style' loader as the same as css.
+      // enable scss with 'sass' loader and use 'style | css' loader as the same as css.
       {
         test: /\.scss$/, 
         loader: 'style!css?sourceMap!sass?sourceMap'
+      },
+      // enable less with 'less' loader and user 'style | css' loader as the same as css.
+      {
+        test: /\.less$/,
+        loader: 'style!css?sourceMap!less?sourceMap'
       }
     ]
   },

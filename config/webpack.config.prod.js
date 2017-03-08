@@ -112,7 +112,8 @@ module.exports = {
           /\.css$/,
           /\.json$/,
           /\.svg$/,
-          /\.scss$/
+          /\.scss$/,
+          /\.less$/
         ],
         loader: 'url',
         query: {
@@ -169,6 +170,11 @@ module.exports = {
       {
         test: /\.scss$/, 
         loader: 'style!css?sourceMap!sass?sourceMap'
+      },
+      // enable less with 'less' loader and user 'style | css' loader as the same as css.
+      {
+        test: /\.less$/,
+        loader: 'style!css?sourceMap!less?sourceMap'
       }
     ]
   },
