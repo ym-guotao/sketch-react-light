@@ -10,6 +10,7 @@ npm install && npm start
 - support decorator
 - add react-router
 - support Less
+- use [eslint-config-36node](https://github.com/36node/eslint-config-36node) as eslint tool.
 
 # original description from create-react-app
 
