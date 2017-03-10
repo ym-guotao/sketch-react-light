@@ -4,14 +4,14 @@ import {Link} from 'react-router';
 import './hello-react.less';
 
 export default class HelloReact extends Component {
-  componentDidMount() {
-    /* eslint-disable no-console */
-    console.log('support less');
+  constructor() {
+    super();
+    this.greeting = 'react';
   }
   render() {
     return (
       <div className="hello_react">
-        <h2>This is hello react page.</h2>
+        <h2>This is hello {this.greeting} page.</h2>
         <Link to={'/'}>back to hello world page.</Link>
       </div>
     );
