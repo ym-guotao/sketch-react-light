@@ -1,3 +1,4 @@
+![https://travis-ci.org/guotaonature/sketch-react-light.svg?branch=master](https://travis-ci.org/guotaonature/sketch-react-light)
 # changelog compare with original create-react-app
 
 ## useage
